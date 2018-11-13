@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+<form action="recap.php" class="container" method="post" enctype="multipart/form-data">
+    <p style="text-align:center">Bienvenue chez Amin Food</p>
+    <p style="text-align:center"> Veuillez passer votre commande</p>
+    Nom: <input class="form-control" type="text" name="nom"><br>
+    Prénom: <input class="form-control" type="text" name="prenom"><br>
+    Carte d'idendité: <input type="file" name="fichier"><br>
+    Nombre de Sandwitchs: <input class="form-control" type="number" min="0"  name="nombre_sandwichs"><br>
+    Adresse: <textarea class="form-control"  name="adresse"></textarea><br>
+    Type du Sandwitch: <select class="form-control"  name="types" size="4">
+    <option value="hamburger">Hamburger</option>
+    <option value="poulet">Poulet</option>
+    <option value="escalope">Escalope</option>
+    <option value="viande">Viande</option>
+</select><br>
+Ajoutez des suppléments: <br>
+    <input type="checkbox" class="form-control" name="ingredient1" value="Harrisa"> Harissa<br>
+    <input type="checkbox" class="form-control" name="ingredient2" value="Salade"> Salade<br>
+    <input type="checkbox" class="form-control" name="ingredient3" value="Mayonnaise"> Mayonnaise<br>
+    <input type="submit"  style="display:block;margin-left:auto;margin-right:auto;" class="btn" value="Commander"><br>
+
+</form>
+</body>
+</html>
